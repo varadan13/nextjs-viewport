@@ -1,5 +1,7 @@
+import Link from "next/link";
+
 const Index = () => {
-  return <a href="./surferboy">Surferboy</a>;
+  return <Link href="./surferboy">Surferboy</Link>;
 };
 
 export default Index;
