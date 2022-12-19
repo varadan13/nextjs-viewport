@@ -7,8 +7,6 @@ const Index = () => {
   R.add(2, 3); //=>  5
   R.add(7)(10); //=> 17
 
-  const mapIndexed = R.addIndex(R.map);
-  mapIndexed((val, idx) => idx + "-" + val, ["f", "o", "o", "b", "a", "r"]);
   //=> ['0-f', '1-o', '2-o', '3-b', '4-a', '5-r']
 
   R.adjust(1, R.toUpper, ["a", "b", "c", "d"]); //=> ['a', 'B', 'c', 'd']
