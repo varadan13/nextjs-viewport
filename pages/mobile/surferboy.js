@@ -1,4 +1,4 @@
-import { chunk, differenceWith } from "lodash";
+import { chunk, differenceWith, isEqual } from "lodash";
 
 const Index = () => {
   chunk(["a", "b", "c", "d"], 2);
@@ -7,7 +7,7 @@ const Index = () => {
     { x: 2, y: 1 },
   ];
 
-  differenceWith(objects, [{ x: 1, y: 2 }], _.isEqual);
+  differenceWith(objects, [{ x: 1, y: 2 }], isEqual);
   // => [{ 'x': 2, 'y': 1 }]
   return <div>surferboy</div>;
 };
